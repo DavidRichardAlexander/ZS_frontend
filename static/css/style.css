@@ -535,6 +535,48 @@ ol {
 	background: url("../img/process-line.png") no-repeat scroll 0 0/cover;
 }
 
+
+/*---------------------
+	Process Box
+-----------------------*/
+
+.process:last-child .process-box:after {
+	display: none;
+}
+
+.process-box {
+	position: relative;
+	text-align: center;
+	padding: 35px;
+	margin-top: 30px;
+	-webkit-box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
+	        box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
+}
+
+.process-box .process-icon {
+	height: 55px;
+	margin-bottom: 30px;
+	padding-top: 5px;
+}
+
+.process-box h4 {
+	margin-bottom: 15px;
+}
+
+.process-box p {
+	margin-bottom: 0;
+}
+
+.process-box:after {
+	position: absolute;
+	content: '';
+	width: 275px;
+	height: 56px;
+	top: -40px;
+	right: -40%;
+}
+
+
 /*---------------------
 	Fact Section
 -----------------------*/
