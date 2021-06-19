@@ -6,7 +6,7 @@ $(document).ready(function(){
     dropdown.append('<option value="" selected disabled hidden>Country*</option>');
     dropdown.prop('selectedIndex', 0);
 
-    const url = 'data/countries.json';
+    const url = 'main/data/countries.json';
 
     // Populate dropdown with list of provinces
     $.getJSON(url, function (data) {
