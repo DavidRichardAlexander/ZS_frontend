@@ -130,8 +130,7 @@
 			document.getElementsByName("username").required = true;
 			document.getElementsByName("password").required = true;
 
-			var url = '/static/data/country/'
-			//var url = 'https://www.zippedscript.com/data/country/'
+			var url = 'https://www.zippedscript.com/data/country/'
 			//var url = 'http://www.127.0.0.1:5000/data/country/'
 			url = url.concat(element5.options[element5.selectedIndex].value)
 			$.getJSON(url, function (data) {
@@ -173,13 +172,22 @@
 	</header>
 	<!-- Header section end -->
 
+	<!-- Floating button -->
+	<div id="recentverificationbox">
+		<div class="idbox">
+			<img id="verification_image" src="https://www.zippedscript.com/static/img/logos/CA/university_of_toronto.png" />
+			<p id="verification_text"><strong>Recent Verification</strong><br>Mike B****<br>University of Toronto</p>
+		</div>
+	</div>
+	<!-- Floating button end -->
+
 	<!-- Hero section -->
 	<section class="hero-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 hero-text">
-					<h2>Trust, but Verify.</h2>
-					<h4>The only instantaneous degree verification service in the world.</h4>
+					<h2>Leaders In Degree Verification </h2>
+					<h4>Free, independent degree verification in just a few clicks!</h4>
 				</div>
 				<div class="col-md-6">
 					<img src="static/img/laptop.png" class="laptop-image" alt="">
@@ -209,9 +217,8 @@
 	<section class="features-section spad gradient-bg" id="who">
 		<div class="container text-white">
 			<div class="section-title text-center">
-				<h2>Education Verification for the 21st Century</h2><br>
-				<h4>Verifying higher education claims is a crucial step in hiring the right candidates. Yet, the traditional way to validate claims is outdated. Calling registrars, waiting for paper transcripts to be mailed, or relying on candidates to provide truthful information makes the process longer and more tedious than it needs to be. </h4><br><br>
-				<h4>ZippedScript’s software automates the verification process so that education claims can be authenticated in 15 seconds and with 100% accuracy. </h4>
+				<h2>Verify your degree on LinkedIn so that:</h2><br>
+				<img src="static/img/infographic.png" class="laptop-image" alt="">
 			</div>
 		</div>
 	</section>
@@ -220,61 +227,29 @@
 	<section class="process-section spad" id="works">
 		<div class="container">
 			<div class="section-title text-center">
-				<h2>Background Check Companies will…</h2>
+				<h2>How It Works</h2>
+				<h4>Zipped Script uses an automated system to verify academic claims, making the verification process as simple and as streamlined as possible.</h4>
 			</div>
 			<div class="row">
 				<div class="col-md-4 process">
-					<div class="process-box">
-						<img src="static/img/laptop.png" class="laptop-image" alt="">
-						<h4>1. Deliver results faster to their paying customers </h4>
+					<div class="process-step">
+						<h4>Provide Information</h4>
+						<p>Graduates sign into our platform with their school credentials. These credentials are the ones used to log into the school platform that states your degree completion status.</p>
 					</div>
 				</div>
 				<div class="col-md-4 process">
-					<div class="process-box">	
-						<img src="static/img/laptop.png" class="laptop-image" alt="">
-						<h4>2. Guarantee 100% accurate results for education verification </h4>
+					<div class="process-step">	
+						<h4>Wait for Verification</h4>
+						<p>In 48 hours or less, we send graduates an e-mail with a verification link. For popular schools, our search algorithm will provide a link even faster.</p>
 					</div>
 				</div>
 				<div class="col-md-4 process">
-					<div class="process-box">
-						<img src="static/img/laptop.png" class="laptop-image" alt="">
-						<h4>3. Save time and reduce costs by automating a process that is cumbersome for staff</h4>
+					<div class="process-step">
+						<h4>Share Verification</h4>
+						<p>The custom verification link we send to graduates can be shared with employers and can be added to their LinkedIn™ profile.</p>
 					</div>
 				</div>
 			</div>
-			<br><br>
-			<div class="section-title text-center">
-				<h2>Employers will…</h2>
-			</div>
-			<div class="row">
-				<div class="col-md-3 process">
-					<div class="process-box">
-						<img src="static/img/laptop.png" class="laptop-image" alt="">
-						<h4>1. Save time and energy spent on chasing down education claims manually</h4>
-					</div>
-				</div>
-				<div class="col-md-3 process">
-					<div class="process-box">	
-						<img src="static/img/laptop.png" class="laptop-image" alt="">
-						<h4>2. Weed out deceitful prospects from the jump </h4>
-					</div>
-				</div>
-				<div class="col-md-3 process">
-					<div class="process-box">
-						<img src="static/img/laptop.png" class="laptop-image" alt="">
-						<h4>3. Avoid the financial and reputational damage caused by hiring fraudulent candidates </h4>
-					</div>
-				</div>
-				<div class="col-md-3 process">
-					<div class="process-box">
-						<img src="static/img/laptop.png" class="laptop-image" alt="">
-						<h4>4. Save the trees that are killed every year from printing unnecessary transcripts </h4>
-					</div>
-				</div>
-			</div>
-			<br><br><br><br>
-			
-
 		</div>
 	</section>
 	<!-- Process section end -->
@@ -282,12 +257,15 @@
 	<!-- Features section -->
 	<section class="features-section spad gradient-bg" id="info">
 		<div class="container text-white">
-				<div class="section-title text-center">
-				<h2>100% Accurate Results.</h2>
-				<h2>Instantaneous Verification. </h2>
-				<h2>Less Friction. </h2>
+			<div class="section-title text-center">
+				<h2>Companies Using ZippedScript</h2>
 			</div>
-
+			<div class="row" style="justify-content: center;">
+				<img src="static/img/member/1.png" alt="Image" style="max-height: 200px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src="static/img/member/2.png" alt="Image" style="max-height: 200px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src="static/img/member/3.png" alt="Image" style="max-height: 200px; background-color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src="static/img/member/4.png" alt="Image" style="max-height: 200px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</div>
 		</div>
 	</section>
 	<!-- Features section end -->
@@ -296,76 +274,81 @@
 	<section class="about-section spad" id="verify">
 		<div class="container">
 			<div class="section-title text-center">
-				<h2>How it Works </h2>
-			</div>
-			<div class="row text-center" style="justify-content: center;">
-				<h4>ZippedScript’s algorithm determines whether an education claim in Canada is valid in seconds. With a seamless integration of our API, you get to control the user experience without compromising your onboarding process. </h4>
-			</div><br><br><br>
-			<div class="row">
-				<div class="col-md-3 process">
-					<div class="process-step">
-						<h4>Install Our API </h4>
-						<p>Work with our implementation team to get the API installed into your system to keep users on your site. </p>
-					</div>
-				</div>
-				<div class="col-md-3 process">
-					<div class="process-step">	
-						<h4>Customize Workflow </h4>
-						<p>Customize the look and feel of this step in your current onboarding process. </p>
-					</div>
-				</div>
-				<div class="col-md-3 process">
-					<div class="process-step">
-						<h4>Collect Information </h4>
-						<p>Graduates will select their school’s name from a dropdown list and provide their school login credentials (ID + password).</p>
-					</div>
-				</div>
-				<div class="col-md-3 process">
-					<div class="process-step">
-						<h4>Publish Verification </h4>
-						<p>The graduate will receive an e-mail with a custom link that authenticates the name, date, and title of the degree(s) in question. The graduate will then send their custom link to your company to confirm successful completion. </p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</section>><br><br><br>
-
-	<section class="features-section spad gradient-bg" id="who">
-		<div class="container text-white">
-			<div class="section-title text-center">
-				<h2>How is it 100% accurate?</h2><br>
-				<h4>Our software communicates directly with the registrar of Universities & Colleges where degree information is stored. </h4><br><br>
-				<h2>What schools does it work for?</h2><br>
-				<h4>ZippedScript is capable of verifying claims for every accredited higher education institution (Universities and Colleges) in Canada. This service will be available to all of North America in mid-2021.   </h4>
-			</div>
-		</div>
-	</section>
-
-	<section class="about-section spad" id="verify">
-		<div class="container">
-			<div class="section-title text-center">
-				<h2>Contact Our Sales Team</h2>
+				<h2>Get Verified</h2>
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="row contact-form">
-						<div class="col-md-12">
-							<div class="form-group">
-								<input class="check-form" name="email" id="subject" type="text" placeholder="Subject*" required>
-								<span><i class="ti-check"></i></span>
+					<form class="contact-form" id="form" method="POST" action="/submit">
+						<div class="row">
+							<div align="center" class="col-md-12"><h4><br>Contact Information</h4></div>
+							<div align="center" class="col-md-12"><h5>Provide us with an email where we will send your verification results.</h5><br></div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input class="check-form" name="email" id="email" type="email" placeholder="Email*" required>
+									<span><i class="ti-check"></i></span>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input class="check-form" name="email_confirm"  required="required" type="email" id="email_confirm" oninput="check_email(this)" placeholder="Confirm email*" required>
+									<span><i class="ti-check"></i></span>
+								</div>
+							</div>
+
+							<div align="center" class="col-md-12"><h4><br>School Details</h4></div>
+							<div align="center" class="col-md-12"><h5>Let us know what school you attended.</h5><br></div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<select class="check-form" id="country" name="country" onchange='CheckCountry(this.value);' required>
+									  <option value="" selected disabled hidden>Country*</option>
+									  <option value="other">Other</option>
+									</select>
+									<span><i class="ti-check"></i></span>
+								</div>
+								<div style="display: none;" class="form-group" id="other_country">
+									<input id="c_other" name="c_other" class="form" type="text" placeholder="Please insert a country">
+								</div>
+								<div class="form-group">
+									<select class="check-form" id="school" name="school" onchange='CheckSchool(this.value);' required>
+									  <option value="" selected disabled hidden>School*</option>
+									</select>
+									<span><i class="ti-check"></i></span>
+								</div>
+								<div style="display: none;" class="form-group" id="other_school">
+									<input id="s_other" name="s_other" class="form" type="text" placeholder="Please insert a school">
+								</div>
+								<div style="display: none;" id="loginheader" align="center" class="col-md-12"><h4><br>Login Information</h4></div>
+								<br>
+								<div align="center">
+									<div style="display: none;" id="loginbody" align="center" class="schoolcard"><br>
+										<div align="center" class="col-md-12"><img id="schoollogo" src="static/img/logo.png" alt="Image" style="width:50%; max-width: 200px"></div><br><br>
+										<div class="col-md-12">
+											<div class="form-group">
+												<input class="check-form" id="username" name="username" type="text" placeholder="Login ID*" required>
+												<span><i class="ti-check"></i></span>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<input class="check-form" id="password" name="password" type="password" placeholder="Login Password*" required>
+												<span><i class="ti-check"></i></span>
+											</div>
+										</div>
+										<br>
+									</div>
+								</div>
+								<br><br>
+								<div class="col-lg-12" align="center" style="overflow: hidden;">
+									{{ recaptcha | safe }}
+								</div>
+							</div>
+							<div align="center" class="col-md-12">
+								<br><br>
+								<div align="center">By clicking "Verify Now" you are agreeing with our <a href="privacy.html">privacy policy</a> and our <a href="terms.html">terms & conditions</a></div>
+								<button class="site-btn sb-gradients mt-4" type="submit">Verify Now</button>
 							</div>
 						</div>
-						<div class="col-md-12">
-							<div class="form-group">
-								<input class="check-form" name="email_confirm"  required="required" type="text" id="message" oninput="check_email(this)" placeholder="Message*" required>
-							</div>
-						</div>
-						</div>
-						<div align="center" class="col-md-12">
-							<button class="site-btn sb-gradients mt-4" onclick="sendMail()">Send Email</button>
-						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -398,17 +381,43 @@
 	<script src="static/js/jquery-3.2.1.min.js"></script>
 	<script src="static/js/owl.carousel.min.js"></script>
 	<script src="static/js/main.js"></script>
-	<script src="static/js/dropdown.js"></script>
-	<script src="static/js/dropdown_schools.js"></script>
-	<script>
-		function sendMail()
-		{
-		    var yourMessage = document.getElementById("message").value;
-		    var subject = document.getElementById("subject").value;
-		    document.location.href = "mailto:chrisgreg23@googlemail.com?subject="
-		        + encodeURIComponent(subject)
-		        + "&body=" + encodeURIComponent(yourMessage);
+	<script src="static/js/{{ js_country }}"></script>
+	<script src="static/js/{{ js_school }}"></script>
+	<script language='javascript' type='text/javascript'>
+		function check_email(input) {
+			if (input.value != document.getElementById('email').value) {
+				input.setCustomValidity('Emails Must Match Must be Matching.');
+			} else {
+				// input is valid -- reset the error message
+				input.setCustomValidity('');
+			}
 		}
+	</script>
+	<script type="text/javascript">
+		var element1=document.getElementById('verification_image');
+		var element2=document.getElementById('verification_text');
+
+		const url = 'https://www.zippedscript.com/data/recent_signup';
+		$.getJSON(url, function (data) {
+			var imgSource = "static/img/logos/"
+			imgSource = imgSource.concat(data.country, "/", data.school_code, ".png")
+			element1.src = imgSource;
+			var verification_text = "<strong>Recent Verification</strong><br>"
+			verification_text = verification_text.concat("", data.first, " ", data.last, " <br>", data.school, " ")
+			element2.innerHTML = verification_text;
+		});
+
+		const interval = setInterval(function() {
+		    const url = 'https://www.zippedscript.com/data/recent_signup';
+			$.getJSON(url, function (data) {
+				var imgSource = "static/img/logos/"
+				imgSource = imgSource.concat(data.country, "/", data.school_code, ".png")
+				element1.src = imgSource;
+				var verification_text = "<strong>Recent Verification</strong><br>"
+				verification_text = verification_text.concat("", data.first, " ", data.last, " <br>", data.school, " ")
+				element2.innerHTML = verification_text;
+			});
+		}, 100000);
 	</script>
 </body>
 </html>
