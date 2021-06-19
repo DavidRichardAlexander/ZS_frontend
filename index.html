@@ -4,7 +4,7 @@
 	<title>ZippedScript | Home</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="ZippedScript - Leaders in degree verification">
-	<meta name="image" content="https://www.zippedscript.com/static/img/meta_image.png">
+	<meta name="image" content="https://davidrichardalexander.github.io/ZS_frontend/static/img/meta_image.png">
 	<meta name="keywords" content="degree, verification, verify, college, university, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->
@@ -130,7 +130,7 @@
 			document.getElementsByName("username").required = true;
 			document.getElementsByName("password").required = true;
 
-			var url = 'https://www.zippedscript.com/data/country/'
+			var url = 'https://davidrichardalexander.github.io/ZS_frontend/data/country/'
 			//var url = 'http://www.127.0.0.1:5000/data/country/'
 			url = url.concat(element5.options[element5.selectedIndex].value)
 			$.getJSON(url, function (data) {
@@ -171,15 +171,6 @@
 		</div>
 	</header>
 	<!-- Header section end -->
-
-	<!-- Floating button -->
-	<div id="recentverificationbox">
-		<div class="idbox">
-			<img id="verification_image" src="https://www.zippedscript.com/static/img/logos/CA/university_of_toronto.png" />
-			<p id="verification_text"><strong>Recent Verification</strong><br>Mike B****<br>University of Toronto</p>
-		</div>
-	</div>
-	<!-- Floating button end -->
 
 	<!-- Hero section -->
 	<section class="hero-section">
@@ -338,9 +329,6 @@
 									</div>
 								</div>
 								<br><br>
-								<div class="col-lg-12" align="center" style="overflow: hidden;">
-									{{ recaptcha | safe }}
-								</div>
 							</div>
 							<div align="center" class="col-md-12">
 								<br><br>
@@ -392,32 +380,6 @@
 				input.setCustomValidity('');
 			}
 		}
-	</script>
-	<script type="text/javascript">
-		var element1=document.getElementById('verification_image');
-		var element2=document.getElementById('verification_text');
-
-		const url = 'https://www.zippedscript.com/data/recent_signup';
-		$.getJSON(url, function (data) {
-			var imgSource = "static/img/logos/"
-			imgSource = imgSource.concat(data.country, "/", data.school_code, ".png")
-			element1.src = imgSource;
-			var verification_text = "<strong>Recent Verification</strong><br>"
-			verification_text = verification_text.concat("", data.first, " ", data.last, " <br>", data.school, " ")
-			element2.innerHTML = verification_text;
-		});
-
-		const interval = setInterval(function() {
-		    const url = 'https://www.zippedscript.com/data/recent_signup';
-			$.getJSON(url, function (data) {
-				var imgSource = "static/img/logos/"
-				imgSource = imgSource.concat(data.country, "/", data.school_code, ".png")
-				element1.src = imgSource;
-				var verification_text = "<strong>Recent Verification</strong><br>"
-				verification_text = verification_text.concat("", data.first, " ", data.last, " <br>", data.school, " ")
-				element2.innerHTML = verification_text;
-			});
-		}, 100000);
 	</script>
 </body>
 </html>
